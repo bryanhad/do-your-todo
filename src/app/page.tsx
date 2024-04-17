@@ -1,3 +1,4 @@
+import ColorPicker from '@/components/ColorPicker'
 import Todo from '@/components/Todo'
 import TodoForm from '@/components/TodoForm'
 import { getAllTodos } from '@/lib/actions'
@@ -10,6 +11,7 @@ async function HomePage() {
         <>
             <h1 className="font-semibold text-2xl">TODOS</h1>
             <TodoForm/>
+            <ColorPicker/>
             <div className="border p-4 rounded-md flex-1">
               <div className='flex flex-wrap gap-2'>
                 {todos.map((todo: TodoProps) => (

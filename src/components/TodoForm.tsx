@@ -15,6 +15,7 @@ import { useForm } from 'react-hook-form'
 import LoadingButton from './LoadingButton'
 import { Input } from './ui/input'
 import { toast } from 'sonner'
+import ColorPicker from './ColorPicker'
 
 function TodoForm() {
     const form = useForm<AddTodoValues>({
